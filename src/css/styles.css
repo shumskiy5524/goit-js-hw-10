@@ -8,11 +8,149 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
-
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+
+.timer-body {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fefefe;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.datetime-picker {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  flex: 1; 
+  max-width: 250px;
+  transition: 0.2s;
+}
+
+.datetime-picker:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+}
+
+.timer-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.timer-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.time-block {
+  flex: 1;
+  background: #f5f8ff;
+  border-radius: 12px;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
+}
+
+
+.time-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #08090bfc;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.time-label {
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.snackbar-body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+
+.form-snackbar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.form-snackbar label {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.form-snackbar input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+
+.form-snackbar fieldset {
+  width: 260px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.form-snackbar fieldset label {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+.button-snackbar {
+  width: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
