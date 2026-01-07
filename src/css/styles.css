@@ -104,14 +104,14 @@
 }
 
 
-.form-snackbar {
+.form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 
-.form-snackbar label {
+.form-label {
   width: 260px;
   display: flex;
   flex-direction: column;
@@ -120,7 +120,7 @@
 }
 
 
-.form-snackbar input[type="number"] {
+.form-input[type="number"] {
   width: 100%;
   padding: 10px 12px;
   font-size: 16px;
@@ -131,13 +131,13 @@
 }
 
 
-.form-snackbar fieldset {
+.form-fieldset {
   width: 260px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 12px 14px;
 }
-.form-snackbar fieldset label {
+.form-fieldset label {
   flex-direction: row;
   align-items: center;
   gap: 8px;
